@@ -1,4 +1,5 @@
-jfrog artifactory===
+==============Integrate jfrog artifactory with Jenkins===
+
 install jfrog on any server with it's url access it on web browser
 in UI create a user with admin access. this jfrog username and password will be required in jenkins
 
@@ -7,3 +8,27 @@ In jenkins, manage jenkins, install artifactory plugin
 go to manage jenkins, configure system, search for jfrog section, provide jfrog url, provide username and password which you have created at step-1
 while configuration of job in jenkkns pipeline, in Build Environment section, select maven-artifactory integration.
 after that jfrog url auto populated. Then select jfrog repo where we want to store artifacts
+in build steps,  select artifactory maven3
+
+===========integrate Maven with Jenkins=====
+in plugins, github integration plugin and maven integration plugin install
+go to manage jenkins, global tool configuration, go to maven section,
+give name, that will be use in jenkins pipeline
+select maven version and select install automatically
+(if you already install maven in jenkins server given path)
+in build steps of job, select top level maven targets
+
+=======Integrate sonarqube with Jenkins====
+
+plugins--git, maven integration, sonarqube scanner 
+go to configure systems, search sonarqube servers
+provide sonarqube url
+sonarqube token as secret text
+configure jenkisn jobs, in build steps select top level maven targets
+in add build steps select execute sonarqube scanner
+path to project properties(in jenkins create one file and add path and filename)
+in global tool configuration, add sonarqube scanner
+provide name, sonar runner home
+select install automatically
+select version
+i
