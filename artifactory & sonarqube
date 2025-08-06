@@ -1,0 +1,9 @@
+jfrog artifactory===
+install jfrog on any server with it's url access it on web browser
+in UI create a user with admin access. this jfrog username and password will be required in jenkins
+
+In jenkins, manage jenkins, install artifactory plugin
+
+go to manage jenkins, configure system, search for jfrog section, provide jfrog url, provide username and password which you have created at step-1
+while configuration of job in jenkkns pipeline, in Build Environment section, select maven-artifactory integration.
+after that jfrog url auto populated. Then select jfrog repo where we want to store artifacts
