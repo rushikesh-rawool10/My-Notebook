@@ -1,0 +1,23 @@
+Hshicorp- vault
+helm repo add hashicorp link
+helm install vault 
+go inside vault pod
+when vault is initialised, it is sealed by default
+vault login and enter root token
+
+vault secrets list
+vault secrets enable kv-v2
+
+===add a new secret====
+
+vault kv put kv-v2/vault-demo/mysecret username=shabbir
+vault kv get kv-v2/vault-demo/mysecret
+
+vault policy list 
+
+vault policy write mysecret - << EOF
+path "kv-v2/vault-demo/mysecret" {
+capabilities = ["read"]
+}
+EOF
+
