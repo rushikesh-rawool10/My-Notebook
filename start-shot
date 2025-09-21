@@ -1,0 +1,70 @@
+AWS DevOps STAR Story Cheat Sheet
+1. EKS Pod OOMKilled
+
+S: Pods crashing, OOMKilled in EKS.
+
+T: Fix stability + resource allocation.
+
+A: Analyzed logs, set requests/limits, enabled HPA.
+
+R: Zero OOMKills, +30% uptime at peak.
+
+2. CodePipeline Rollback
+
+S: Prod deployment failed, API errors.
+
+T: Rollback quickly.
+
+A: Used CodeDeploy rollback, added smoke tests + blue/green.
+
+R: Restored in 5 min, safer future deployments.
+
+3. EC2 Cost Optimization
+
+S: High AWS bill due to idle EC2s.
+
+T: Cut costs, keep performance.
+
+A: Cost Explorer, ASG, shutdown script, Spot instances.
+
+R: 25–30% cost savings (~$50K/year).
+
+4. Jenkins Pipeline Failures
+
+S: Frequent build failures, long build times.
+
+T: Stabilize pipeline.
+
+A: Added dependency caching, multi-stage Docker build, Terraform infra.
+
+R: Failures ↓80%, build time 25 → 8 mins.
+
+5. RDS Disaster Recovery
+
+S: Single RDS → downtime during maintenance.
+
+T: Add HA + DR.
+
+A: Migrated to Multi-AZ, backups, Route 53 failover, cross-region DR.
+
+R: 99.99% SLA, <60 sec failover, zero data loss.
+
+6. Secrets Management
+
+S: Secrets stored in plain-text configs.
+
+T: Secure credentials.
+
+A: Moved to Secrets Manager + SSM, IAM least privilege, pipeline integration.
+
+R: Passed audit, 90% risk reduction.
+
+7. EKS Ingress Issue
+
+S: Service not accessible externally.
+
+T: Fix ingress routing.
+
+A: Checked svc/ing, fixed ALB annotations, SG + DNS config.
+
+R: Restored in 15 min, documented standard config.
