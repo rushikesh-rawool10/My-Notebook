@@ -1,0 +1,135 @@
+🔹 AWS Core Services
+
+What are the differences between EC2 instance types (General, Compute, Memory, Storage optimized)?
+
+How do you resize or scale an EC2 instance?
+
+What is the difference between EBS and Instance Store?
+
+How do S3 storage classes differ (Standard, IA, Glacier, One Zone)?
+
+How does S3 versioning & lifecycle policies help in DevOps workflows?
+
+What are VPC endpoints and why are they used?
+
+🔹 CI/CD in AWS
+
+Explain how you would implement a CI/CD pipeline in AWS.
+
+Difference between AWS CodePipeline, Jenkins, and GitHub Actions?
+
+How does CodeBuild differ from CodeDeploy?
+
+How do you implement Blue/Green deployments in AWS?
+
+How do you integrate CloudFormation/Terraform into a CI/CD pipeline?
+
+How do you roll back a failed deployment in AWS CodeDeploy?
+
+🔹 Containers & Kubernetes
+
+Difference between ECS and EKS? When would you choose one over the other?
+
+How does Fargate differ from EC2-based ECS tasks?
+
+How do you expose a Kubernetes application to the internet in EKS?
+
+How do you handle EKS node upgrades with zero downtime?
+
+Explain how Ingress controllers work in EKS.
+
+How would you secure Kubernetes secrets in AWS?
+
+🔹 Infrastructure as Code (IaC)
+
+Difference between CloudFormation and Terraform?
+
+What are Terraform Workspaces and how do you use them?
+
+Explain a Terraform module and give an example.
+
+How do you manage multiple environments (dev/qa/prod) in Terraform?
+
+How do you handle state locking in Terraform on AWS?
+
+What is drift detection in CloudFormation?
+
+🔹 Monitoring & Logging
+
+What’s the difference between CloudWatch Logs, Metrics, and Events?
+
+How do you create a CloudWatch alarm for high CPU on EC2?
+
+What is CloudTrail and how does it differ from CloudWatch?
+
+How do you monitor EKS pods and nodes using AWS tools?
+
+How would you integrate Dynatrace / Datadog / Prometheus with AWS?
+
+How do you reduce false positives in monitoring alerts?
+
+🔹 Security & Networking
+
+Difference between Security Groups and NACLs?
+
+How do you implement least privilege access in AWS IAM?
+
+What are IAM roles vs IAM policies vs IAM users?
+
+What are STS tokens and when are they used?
+
+How do you enable cross-account access in AWS?
+
+How do you secure secrets and credentials in AWS? (Secrets Manager vs SSM Parameter Store)
+
+🔹 Scaling & Cost Optimization
+
+How does Auto Scaling work in EC2?
+
+What types of Auto Scaling policies exist (Step, Target tracking, Scheduled)?
+
+What’s the difference between Reserved Instances, On-Demand, and Spot Instances?
+
+How do you optimize costs for EC2 and S3?
+
+How do you shut down EC2 instances automatically during off-business hours?
+
+🔹 Troubleshooting & Real-World Scenarios
+
+A pod in EKS is OOMKilled even though no memory limit is set — what could be the reason?
+
+Your deployment rolled out but pods are not created — what would you check first?
+
+How do you debug failing builds in CodeBuild?
+
+You notice high memory usage in containers — how do you fix it?
+
+How would you troubleshoot intermittent latency issues in an API running on ECS/EKS?
+
+An EC2 instance is not reachable over SSH — what’s your troubleshooting flow?
+
+Your CodePipeline deployment failed in prod — how do you roll back safely?
+
+🔹 Best Practices (Senior-Level)
+
+How do you design a highly available multi-AZ architecture in AWS?
+
+How would you migrate an on-premise application to AWS with zero downtime?
+
+How do you enforce governance & compliance in AWS (GuardDuty, Config, SCP)?
+
+What’s your approach to blue/green vs canary vs rolling deployments?
+
+How do you implement GitOps (ArgoCD/Flux) with EKS?
+
+How do you handle secrets rotation in AWS for RDS or Lambda?
+
+How do you automate DR (Disaster Recovery) setup in AWS?
+
+✅ Tips for 4+ years experience:
+
+Expect scenario-based troubleshooting questions (EKS pod failures, pipeline rollbacks, infra drift).
+
+Be prepared with STAR-format answers for real challenges you solved (e.g., cost optimization, deployment failures, infra automation).
+
+Hands-on knowledge of Terraform, Jenkins, Docker, Kubernetes, CI/CD pipelines integrated with AWS is often tested.
