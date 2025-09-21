@@ -1,1 +1,15 @@
-dynatrace
+register and login on dynatrace portal
+deploy dynatrace option
+one agent download
+for linux , windows - executables, daemon will run
+k8s , openshift docker -- container based
+aws lambda, azure functioms --API  code
+----------------------
+ansible collection -- ansible roles
+puppet module -- modules
+
+---------------for linux demo
+create a token
+download
+install
+start service
